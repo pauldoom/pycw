@@ -469,7 +469,7 @@ class TimeEntry(CWObject):
 	_search = 'TimeEntry.FindTimeEntries'
 	_save = 'TimeEntry.AddOrUpdateTimeEntry'
 	_delete = 'TimeEntry.DeleteTimeEntry'
-	_id_fields = [ ]
+	_id_fields = [ 'TimeEntryFindResult' ]
 
 class TicketNote(CWObject):
 	_name = 'TicketNote',
