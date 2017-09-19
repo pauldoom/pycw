@@ -39,7 +39,7 @@ def strip_control_characters(str_to_clean):
 		)
 
 		str_to_clean = re.sub(RE_XML_ILLEGAL, '?', str_to_clean)  
-		str_to_clean = re.sub(r"[\x01-\x1F\x7F]", "", input)  
+		str_to_clean = re.sub(r"[\x01-\x1F\x7F]", "", str_to_clean)  
 
 		return str_to_clean
 		# ascii control characters  
